@@ -79,11 +79,11 @@ def main(page: ft.Page):
             page.pubsub.send_all(Message(page.session.get("user_name"), new_message.value, message_type="chat_message"))
             
             # asking user to wait till we get our response
-            page.pubsub.send_all(Message(user_name="Poppy", text="Poppy simulator is getting the response for you...", message_type="login_message"))
+            page.pubsub.send_all(Message(user_name="Robbert the crab", text="AI crab is getting the response for you...", message_type="login_message"))
 
             # fetching the SmartGuru AI response
             ai_response = assistant.Response(str(new_message.value))
-            page.pubsub.send_all(Message("Poppy", str(ai_response).lstrip(), message_type="chat_message"))
+            page.pubsub.send_all(Message("AI crab", str(ai_response).lstrip(), message_type="chat_message"))
 
             new_message.value = ""
             new_message.focus()
