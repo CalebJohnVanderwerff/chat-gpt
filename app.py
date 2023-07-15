@@ -53,7 +53,7 @@ class ChatMessage(ft.Row):
 
 def main(page: ft.Page):
     # page.horizontal_alignment = "stretch"
-    page.title = "Test APP AI"
+    page.title = "The scuttling crab"
     page.theme_mode = "dark"
     page.fonts = {
         "organical": "fonts/organical.ttf"
