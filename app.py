@@ -137,7 +137,7 @@ def main(page: ft.Page):
 
     # Add everything to the page
     page.add(
-        ft.Row([ft.Text("Poppy simulator", font_family="organical", style="headlineLarge", color="blue")], alignment="center"),
+        ft.Row([ft.Text("Chat GPT", font_family="organical", style="headlineLarge", color="blue")], alignment="center"),
         ft.Container(
             content=chat,
             border=ft.border.all(2, ft.colors.BLUE),

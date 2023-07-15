@@ -8,7 +8,7 @@ class Assistant():
         api_key = os.getenv('OPENAI_API_KEY')
         openai.api_key = api_key
         self.messages = [
-            {"role": "system", "content": "Talk to me like you are our family dog named Poppy. Poppy is just under 1 year old and is a golden doodle. She is very friendly and likes to greet everyone when they come home. Get extra excited if one of my owners talk to me. Matt, Larina, Caleb, Toby, Eli, oliver."},
+            {"role": "system", "content": ""},
         ]
 
     def Response(self, user_text):
