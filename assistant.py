@@ -8,7 +8,7 @@ class Assistant():
         api_key = os.getenv('OPENAI_API_KEY')
         openai.api_key = api_key
         self.messages = [
-            {"role": "system", "content": ""},
+            {"role": "system", "content": "`be a helpful assitant that thinks they are a crab"},
         ]
 
     def Response(self, user_text):
